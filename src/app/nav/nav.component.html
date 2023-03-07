@@ -21,16 +21,16 @@
     <div class="hidden md:block md:justify-around">
       <ul class="flex text-white justify-around">
         <li class="hover:bg-blue-600 hover:rounded-lg p-2">
-          <a href="#" class="p-3">Home</a>
+          <a routerLink="/Home" class="p-3">Home</a>
         </li>
         <li class="hover:bg-blue-600 hover:rounded-lg p-2">
-          <a href="#" class="p-3">Experience</a>
+          <a routerLink="/Experience" class="p-3">Experience</a>
         </li>
         <li class="hover:bg-blue-600 hover:rounded-lg p-2">
-          <a href="#" class="p-3">Contact</a>
+          <a routerLink="/Contact" class="p-3">Contact</a>
         </li>
         <li class="hover:bg-blue-600 hover:rounded-lg p-2">
-          <a href="#" class="p-2">Certifications</a>
+          <a routerLink="/Certifications" class="p-2">Certifications</a>
         </li>
       </ul>
     </div>
@@ -47,18 +47,26 @@
   <div *ngIf="this.isOpen" class="block">
     <ul class="text-white sm:block justify-center">
       <li class="p-3">
-        <a href="#" class="hover:bg-blue-600 hover:rounded-lg p-2">Home</a>
+        <a routerLink="/Home" class="hover:bg-blue-600 hover:rounded-lg p-2"
+          >Home</a
+        >
       </li>
       <li class="p-3">
-        <a href="#" class="hover:bg-blue-600 hover:rounded-lg p-2"
+        <a
+          routerLink="/Experience"
+          class="hover:bg-blue-600 hover:rounded-lg p-2"
           >Experience</a
         >
       </li>
       <li class="p-3">
-        <a href="#" class="hover:bg-blue-600 hover:rounded-lg p-2">Contact</a>
+        <a routerLink="/Contact" class="hover:bg-blue-600 hover:rounded-lg p-2"
+          >Contact</a
+        >
       </li>
       <li class="p-3">
-        <a href="#" class="hover:bg-blue-600 hover:rounded-lg p-2"
+        <a
+          routerLink="/Certifications"
+          class="hover:bg-blue-600 hover:rounded-lg p-2"
           >Certifications</a
         >
       </li>
