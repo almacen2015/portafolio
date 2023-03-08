@@ -1,4 +1,4 @@
-<nav class="bg-black">
+<nav class="bg-black fixed w-full top-0">
   <div class="flex items-center w-auto h-16 md:h-15 rounded-lg justify-around">
     <div class="flex text-white">
       <div>
@@ -47,25 +47,33 @@
   <div *ngIf="this.isOpen" class="block">
     <ul class="text-white sm:block justify-center">
       <li class="p-3">
-        <a routerLink="/Home" class="hover:bg-blue-600 hover:rounded-lg p-2"
+        <a
+          routerLink="/Home"
+          (click)="this.toogle()"
+          class="hover:bg-blue-600 hover:rounded-lg p-2"
           >Home</a
         >
       </li>
       <li class="p-3">
         <a
           routerLink="/Experience"
+          (click)="this.toogle()"
           class="hover:bg-blue-600 hover:rounded-lg p-2"
           >Experience</a
         >
       </li>
       <li class="p-3">
-        <a routerLink="/Contact" class="hover:bg-blue-600 hover:rounded-lg p-2"
+        <a
+          routerLink="/Contact"
+          (click)="this.toogle()"
+          class="hover:bg-blue-600 hover:rounded-lg p-2"
           >Contact</a
         >
       </li>
       <li class="p-3">
         <a
           routerLink="/Certifications"
+          (click)="this.toogle()"
           class="hover:bg-blue-600 hover:rounded-lg p-2"
           >Certifications</a
         >
